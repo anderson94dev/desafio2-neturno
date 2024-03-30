@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="imagem/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Projeto Netuno</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light"
+      style="background-color: var(--azul)"
+    >
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto" style="color: white">
+          <!-- Alteração de 'mr-auto' para 'mx-auto' para centralizar o texto -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <img
+                src="imagem/assets/logo.png"
+                height="30px"
+                class="d-inline-block align-top"
+                alt=""
+              />
+            </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >O Projeto <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">O problema</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sua Jornada</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Objetivos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <button class="btn btn-dark" type="submit">
+                Processo Seletivo
+              </button>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="line"></div>
+
+    <div class="row">
+      <div class="topo-1 col-8"></div>
+      <div class="topo-2 col-4">
+        <div class="topo-form rounded">
+          <div class="container">
+            <div class="head-form-top">
+              <h5 class="texto-cinza">Formulário de Cadastro</h5>
+              <h6 class="texto-azul">Preencha seus dados</h6>
+            </div>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <img src="imagem/icones/user.png" alt="Ícone" />
+                </span>
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Nome completo*"
+                aria-label="Nome completo*"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <img src="imagem/icones/mail.png" alt="Ícone" />
+                </span>
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="E-mail*"
+                aria-label="E-mail*"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <img src="imagem/icones/state.png" alt="Ícone" />
+                </span>
+              </div>
+              <select class="form-control" id="estado">
+                <option value="" disabled selected>Estado*</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+              </select>
+            </div>
+          </div>
+          <div style="background-color: var(--azul)">
+            <div class="head-form-top">
+              <h6
+                class="texto-branco"
+                style="font-size: 13px; padding-bottom: 5px; padding-top: 10px"
+              >
+                Conhecimentos de Programação*
+              </h6>
+              <!-- Nova div para as colunas -->
+              <div
+                class="row texto-branco"
+                style="
+                  padding-left: 10px;
+                  padding-right: 10px;
+                  padding-bottom: 10px;
+                  font-size: 14px;
+                "
+              >
+                <div class="form-check espaco-checkbox">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    HTML
+                  </label>
+                </div>
+                <div class="form-check espaco-checkbox">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    CSS
+                  </label>
+                </div>
+                <div class="form-check espaco-checkbox">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    JavaScript
+                  </label>
+                </div>
+                <div class="form-check espaco-checkbox">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    PHP
+                  </label>
+                </div>
+                <div class="form-check espaco-checkbox">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    .NET
+                  </label>
+                </div>
+                <div class="form-check espaco-checkbox">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Vue.JS
+                  </label>
+                </div>
+                <div class="form-check espaco-checkbox">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    ReactJS
+                  </label>
+                </div>
+                <div class="form-check espaco-checkbox">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    React Native
+                  </label>
+                </div>
+                <div class="form-check espaco-checkbox">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Node
+                  </label>
+                </div>
+                <div class="form-check espaco-checkbox">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Python
+                  </label>
+                </div>
+                <div class="form-check espaco-checkbox">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Flutter
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Outras
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="padding: 20px; padding-top: 10px">
+            <h6
+              class="texto-azul"
+              style="font-size: 13px; font-weight: bold; padding-bottom: 5px"
+            >
+              Já trabalhou com desenvolvimento?
+            </h6>
+            <div style="padding-left: 20px" class="row">
+              <div class="form-check espaco-checkbox">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Não
+                </label>
+              </div>
+              <div class="form-check espaco-checkbox">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Sim
+                </label>
+              </div>
+            </div>
+            <hr />
+            <div class="row justify-content-center">
+              <h6
+                class="texto-azul"
+                style="font-size: 10px; padding-bottom: 5px"
+              >
+                (*)Campos obrigatórios
+              </h6>
+            </div>
+            <div class="row justify-content-center">
+              <button
+                style="width: 350px"
+                type="button"
+                class="btn btn-primary btn-lg"
+              >
+                Enviar
+              </button>
+            </div>
+            <div
+              class="row content-center"
+              style="
+                padding-left: 60px;
+                padding-right: 60px;
+                text-align: center;
+              "
+            >
+              <h6
+                class="texto-cinza"
+                style="font-size: 10px; padding-bottom: 5px"
+              >
+                Ao clicar em enviar você concorda com os termos de uso de dados
+                descritos em politica de privacidade.
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div></div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
